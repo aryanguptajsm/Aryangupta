@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+  .leftbox img {
+    width: 85px;
+    height: auto;
+    
+}
+    .body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 5, 0.1);
+      width: 230px;
+        margin: 0 auto;
+    
+    }
+
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555555;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+.form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #6c63ff;
+      outline: none;
+    }
+
+    .form-group .btn {
+      background-color: #6c63ff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .form-group .btn:hover {
+      background-color: #3c2ce8;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #888888;
+    }
+
+    .form-footer a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
+    }
+  
+@media only screen and (max-width: 700px){
+.leftbox a{
+ display:none;
+}
+.op i{
+  display:block;
+.menubar{
+  display:block;
+}
+}
+leftbox{
+    display:flex;
+   font-size: 10px;
+   align-items: center;
+  }
+.leftbox a {
+    padding:10,20px;
+    align-items: center;
+   text-decoration: none;
+   color: #2e2e2e;
+  margin:5px;
+  }
+.leftbox img{
+    width:80px;
+     height:auto;
+}
+.leftbox a:hover{
+    color: #ffc35c;
+}
+.op i {
+      width:20px;
+     height:20px;
+     margin-left:220px;
+    background-color: #e8e8e8;
+    border-radius:  100%;
+    padding:10px;
+    display: flex;
+    font-size: 20px;
+    
+     
+
+  }
+    
+.logo input {
+    width:20px;
+    height:25px;
+    margin-left:0px,20px;
+    border-radius:5px;
+    border:1px solid #595959;
+}
+.rightbox img {
+     width:10px;
+     height:auto;
+     padding-left:20px;
+  }
+.navbar a{
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  padding: 0px 0px 10px 0px;
+  margin-right: 10px;
+  }
+.banner {
+    background-image: url('a2.png');
+    background-size: cover;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+  
+  
+    
+}   
+.leftbox{
+    display:flex;
+   font-size: 10px;
+   align-items: center;
+  }
+.leftbox a {
+    padding:10,20px;
+    align-items: center;
+   text-decoration: none;
+   color: #2e2e2e;
+  margin:5px;
+  }
+.leftbox img{
+    width:80px;
+     height:auto;
+}
+.leftbox a:hover{
+    color: #ffc35c;
+}
+.op i {
+      width:20px;
+     height:20px;
+     margin-left:220px;
+    background-color: #e8e8e8;
+    border-radius:  100%;
+    padding:10px;
+    display: flex;
+    font-size: 20px;
+    
+     
+
+  }
+    
+.logo input {
+    width:20px;
+    height:25px;
+    margin-left:0px,20px;
+    border-radius:5px;
+    border:1px solid #595959;
+}
+.rightbox img {
+     width:10px;
+     height:auto;
+     padding-left:20px;
+  }
+.navbar a{
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  padding: 0px 0px 10px 0px;
+  margin-right: 10px;
+  }
+.banner {
+    background-image: url('a2.png');
+    background-size: cover;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+  
+  
+    
+}   
+.liftbox p{
+
+   font-size: 20px;
+  align-items: right ;
+  margin-left: 20px;
+  }
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    border-radius:10px;
+    border-top: 1px solid #fff1cf;
+}
+
+.product {
+    border: 1px solid #ffffff;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    background: #fff;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   font-size: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+    
+}
+
+button {
+    background-color: #000442;;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius:20px;
+    
+    
+}
+
+button:hover {
+    background-color: #ffbb3355}
+  
+}
+
+.logo img {
+    width: 85px;
+    height: auto;
+    
+}
+    .body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 5, 0.1);
+      width: 230px;
+        margin: 0 auto;
+    
+    }
+
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555555;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #6c63ff;
+      outline: none;
+    }
+
+    .form-group .btn {
+      background-color: #6c63ff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .form-group .btn:hover {
+      background-color: #3c2ce8;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #888888;
+    }
+
+    .form-footer a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
+    }
+  
+@media only screen and (max-width: 700px){
+.leftbox a{
+ display:none;
+}
+.op i{
+  display:block;
+.menubar{
+  display:block;
+}
+}
+
+</style>  
+</head>
+<body>
+    <header>
+        <div class="leftbox">
+            <img src="a.png" alt="Myntra Logo"> 
+            <nav>
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Offers</a>
+            <a href="#">Login</a>
+                </nav>
+<p class="op"><i class="fa-solid fa-bars"></i></p>
+
+    <div class="menubar">
+       <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Offers</a>
+            <a href="#">Login</a>
+    </div>
+    
+            
+            
+           
+        </div>
+        <div class="rightbox"> 
+           
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Welcome to Myntra Clone</h1>
+            <p>Shop the latest fashion trends!</p>
+            <button>Shop Now</button>
+        </section>
+        <section class="products">
+            <div class="product">
+                <img src="a3.png" alt="Product 1">
+                <h3>kurti</h3>
+                <p>₹999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="a3.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="a3.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="a3.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="a3.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="a3.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products -->
+        </section>
+    </main>
+ <hr>
+</body>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Contact Us</h1>
+    <form action="submit_form.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+    <div class="form-footer">
+      <p>Need help? <a href="#">Contact Support</a></p>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
